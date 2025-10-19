@@ -1,0 +1,691 @@
+:root {
+  --content-color: #101010;
+  --content-color-inv: #fefefe;
+  --idx-color: #465f65;
+  --oplay-color: #96552f;
+  --bl0: #101010;
+  --bl1: #e3f1f2;
+  --dsAbility-bg: #dee2e1;
+}
+[data-theme="dark"] {
+  --content-color: #eee;
+  --content-color-inv: #dadada;
+  --idx-color: #9bd3e0;
+  --oplay-color: #eb854a;
+  --bl0: #eee;
+  --bl1: #e3f1f2;
+  --dsAbility-bg: #333;
+}
+:root {
+  --pic-inv: 0;
+  --ds-wargear-bg: #b4bbb4;
+  --ds-line-bg: #eedaca;
+  --cg-card: #e5e0d1;
+  --ds-background: url(/kill-team3/img/dsBackground.png);
+  --ds-shadow: 1px 1px 4px #000;
+}
+[data-theme="dark"] {
+  --pic-inv: 0.13;
+  --ds-wargear-bg: #676767;
+  --ds-line-bg: #504943;
+  --cg-card: #302f2b;
+  --ds-background: url(/kill-team3/img/dsBackground_dark2.png);
+  --ds-shadow: 1px 1px 4px #fff;
+}
+.dsOuterFrame {
+  margin-bottom: 16px;
+  border-radius: 30px 30px 30px 30px;
+  background-image: url(/kill-team3/img/dsBackground.png);
+  background-image: var(--ds-background);
+  filter: drop-shadow(1px 1px 4px #000);
+  filter: drop-shadow(var(--ds-shadow));
+}
+@media only screen and (max-width: 800px) {
+  .dsOuterFrame {
+  }
+}
+@media only screen and (max-width: 700px) {
+  .dsOuterFrame {
+    margin-bottom: 4px;
+  }
+}
+.dsName_Profile {
+  margin-top: -14px;
+}
+@media only screen and (max-width: 700px) {
+  .dsName_Profile {
+    margin-top: 0px;
+  }
+}
+.pDisplayHeaderCell {
+  background: #000;
+  padding: 4px 20px 4px 20px;
+  border-radius: 30px 0 0 0;
+}
+.pDisplayHeaderCell_ {
+  display: none;
+  border-radius: 30px 30px 0 0;
+}
+@media only screen and (max-width: 700px) {
+  .pDisplayHeaderCell {
+    display: none;
+    border-right-width: 0px;
+  }
+  .pDisplayHeaderCell_ {
+    padding-bottom: 6px;
+    display: block;
+  }
+}
+.dsUnitHeader {
+  background: #000;
+  color: #fefefe;
+  color: var(--font-white);
+}
+.dsModel {
+  vertical-align: middle;
+  font-weight: 500;
+  padding: 0px 0px 0px 3px;
+}
+.dsHeader {
+  padding: 0px 6px 0px 6px;
+  font-family: "DIN-1451", charcoal, arial black;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+.dsKeywordHeader {
+  font-family: "DIN-1451", charcoal, arial black;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.dsStat {
+  font-size: 2.2em;
+}
+.dsStatImg {
+  vertical-align: baseline;
+  padding-right: 4px;
+}
+@media only screen and (max-width: 800px) {
+  .dsStatImg {
+    height: 24px;
+  }
+}
+.dsStatMid {
+  width: 6px;
+}
+.dsStatMidHide {
+  width: 6px;
+}
+.dsPlus {
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+.subfacimg {
+  float: left;
+  padding: 4px 4px 4px 0;
+}
+.picSearch {
+  display: inline-block;
+  margin-left: 5px;
+  width: 25px;
+  height: 19px;
+  filter: invert(0);
+  filter: invert(var(--pic-inv));
+  background-image: url(/kill-team3/img/picSearch3.png);
+}
+@media only screen and (max-width: 800px) {
+  .picSearch {
+    margin-left: 4px;
+    width: 20px;
+    height: 15px;
+    background-image: url(/kill-team3/img/picSearch2.png);
+  }
+}
+@media only screen and (max-width: 532px) {
+  .picSearch {
+    margin-left: 3px;
+    width: 17px;
+    height: 13px;
+    background-image: url(/kill-team3/img/picSearch1.png);
+  }
+}
+.pCell {
+  font-family: "DIN-1451", charcoal, arial black;
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #fefefe;
+  color: var(--font-white);
+  text-align: center;
+  width: 75px;
+  border-width: 0px;
+  padding: 4px;
+  background-color: #000;
+}
+.pCellRightmost {
+  border-radius: 0 30px 0 0;
+}
+.pTable1_ {
+  padding: 4px;
+  width: 240px;
+  border-width: 0px 0px 0px;
+}
+.pTable_h3 {
+  font-family: "DIN-1451", charcoal, arial black;
+  font-weight: 100;
+  font-size: 2.2em;
+  color: #fefefe;
+  color: var(--font-white);
+  margin-left: -20px;
+  padding: 24px 0 0 20px;
+  display: inline-block;
+  letter-spacing: 0.04em;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f15c23;
+}
+@media only screen and (max-width: 800px) {
+  .pCell {
+    font-size: 1.1em;
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .dsStatMidHide {
+    width: 0px;
+  }
+  .pCell {
+    border-radius: 0 0 10px 10px;
+  }
+  .pCellRightmost {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .pCell {
+    border-radius: 0 0 10px 10px;
+    font-size: 1em;
+    width: 65px;
+  }
+}
+.pad4 {
+  padding: 4px;
+}
+.pad4044 {
+  padding: 4px 0 4px 4px;
+}
+.pad1616 {
+  padding: 0px 6px 0px 6px;
+}
+.pad2626 {
+  padding: 3px 6px 3px 6px;
+}
+.ast {
+  font-weight: bold;
+  color: #f15c23;
+}
+.wtOuterFrame {
+  padding: 10px;
+}
+.wtOuterFrame2 {
+  padding: 0 10px 10px 10px;
+}
+@media only screen and (max-width: 700px) {
+  .wtOuterFrame {
+    padding: 10px 0 0 0;
+  }
+  .wtOuterFrame2 {
+    padding: 10px 0 10px 0;
+  }
+}
+.wTable {
+  font-size: 1.15em;
+  font-weight: 500;
+  border-bottom: 1px solid #f15c23;
+}
+.wTable_relic {
+  font-size: 1.15em;
+  font-weight: 500;
+}
+.wTable1 {
+  font-family: "DIN-1451", charcoal, arial black;
+  font-weight: 100;
+  font-size: 1.15em;
+  border-bottom: 2px solid #f15c23;
+  padding: 0px 6px 0px 6px;
+}
+.wTable2 {
+  font-weight: bold;
+  color: #fefefe;
+  padding: 0px 6px 0px 6px;
+}
+.wTable1_short {
+  display: table-cell;
+}
+@media only screen and (max-width: 800px) {
+  .wTable1_short {
+    display: none;
+  }
+}
+.wTable1_short_space {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .wTable1_short_space {
+    display: table-cell;
+  }
+}
+.wTable1_long {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .wTable1_long {
+    display: block;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .wTable2_short {
+    display: none;
+  }
+}
+.wTable2_long {
+  display: none;
+}
+@media only screen and (max-width: 532px) {
+  .wTable2_long {
+    display: table-row;
+  }
+}
+.wTable1_row_long {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .wTable1_row_long {
+    display: table-row;
+  }
+}
+.wTable_WEAPON {
+  width: 300px;
+  display: table-cell;
+}
+@media only screen and (max-width: 800px) {
+  .wTable_WEAPON {
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .wTable_WEAPON {
+    display: none;
+  }
+}
+.wTable_ABILITIES {
+  display: table-cell;
+}
+@media only screen and (max-width: 532px) {
+  .wTable_ABILITIES {
+    display: none;
+  }
+}
+.dsRules {
+  padding: 10px;
+}
+.dsColumn {
+  width: 490px;
+}
+.dsAbility_short {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .dsAbility_long {
+    display: none;
+  }
+  .dsAbility_short {
+    display: block;
+  }
+}
+.dsAbilityHeader {
+  vertical-align: top;
+  background-color: #e09f77;
+  background-color: var(--ds-wargear-bg);
+  width: 700px;
+}
+.dsAbilityHeader2 {
+  vertical-align: top;
+  background-color: #e09f77;
+  background-color: var(--ds-wargear-bg);
+}
+.dsAbilityData {
+  vertical-align: top;
+  background-color: #dee2e1;
+  background-color: var(--dsAbility-bg);
+  padding: 4px;
+  min-height: 28px;
+}
+.dsPloys {
+  background-color: #dee2e1;
+  background-color: var(--dsAbility-bg);
+  padding: 4px;
+  line-height: 1.5em;
+}
+.dsDelimiter {
+  border-right: 10px solid #fff;
+  border-right: 10px solid var(--bg-color);
+}
+.dsDelimiter2 {
+  border-bottom: 10px solid #fff;
+  border-bottom: 10px solid var(--bg-color);
+}
+.dsKeywords {
+  padding: 10px 12px 24px 12px;
+  background-color: #000;
+  border-radius: 0 0 30px 30px;
+  color: #fefefe;
+  color: var(--font-white);
+}
+.wsDataMelee {
+  background-image: url(/kill-team3/img/dsMelee.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wsDataRanged {
+  background-image: url(/kill-team3/img/dsRanged.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wDesc {
+  font-stretch: condensed;
+  font-style: italic;
+}
+.smWrapper {
+  height: 48px;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .smWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+}
+.smWrapper_short {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .smWrapper_long {
+    display: none;
+  }
+  .smWrapper_short {
+    display: flex;
+  }
+}
+.smCombat_On {
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smCombat_On.png);
+}
+.smCombat_Off {
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smCombat_Off.png);
+}
+.smStaunch_On {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smStaunch_On.png);
+}
+.smStaunch_Off {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smStaunch_Off.png);
+}
+.smMarksman_On {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smMarksman_On.png);
+}
+.smMarksman_Off {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smMarksman_Off.png);
+}
+.smScout_On {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smScout_On.png);
+}
+.smScout_Off {
+  margin-left: -20px;
+  float: left;
+  width: 56px;
+  height: 48px;
+  background-image: url(/kill-team3/img/smScout_Off.png);
+}
+a.contentColor {
+  color: #101010;
+  color: var(--content-color);
+}
+a.contentColorInv {
+  color: #fefefe;
+  color: var(--content-color-inv);
+}
+a:link.contentColorInv {
+  color: #fefefe;
+  color: var(--content-color-inv);
+}
+a:visited.contentColorInv {
+  color: #fefefe;
+  color: var(--content-color-inv);
+}
+.contentColorInv {
+  color: #fefefe;
+  color: var(--content-color-inv);
+}
+a.indexColor {
+  color: #465f65;
+  color: var(--idx-color);
+}
+a.oplayColor {
+  color: #96552f;
+  color: var(--oplay-color);
+}
+.bl0 {
+  color: #101010;
+  color: var(--bl0);
+}
+.bl1 {
+  color: #e3f1f2;
+  color: var(--bl1);
+}
+.stretchTable {
+  height: 100%;
+}
+.Col2 {
+  display: inline-block;
+  -moz-column-count: 2;
+  -moz-column-gap: 12px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 12px;
+  column-count: 2;
+  column-gap: 12px;
+}
+@media only screen and (max-width: 800px) {
+  .Col2 {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+.PriceTag {
+  font-family: times new roman, sans-serif;
+  float: right;
+  font-size: 0.9em;
+  line-height: initial;
+  padding: 2px 4px 0px 12px;
+  color: #fefefe;
+  color: var(--font-white);
+  background-color: #b32d2d;
+  font-weight: bold;
+  background: linear-gradient(135deg, transparent 8px, #b32d2d 0) top left,
+    linear-gradient(225deg, transparent 0px, #b32d2d 0) top right,
+    linear-gradient(-45deg, transparent 0px, #b32d2d 0) bottom right,
+    linear-gradient(46deg, transparent 8px, #b32d2d 0) bottom left;
+  background-size: 51% 50%;
+  background-repeat: no-repeat;
+}
+.PriceTag a {
+  text-decoration: underline;
+}
+.PriceTag_inline {
+  font-family: times new roman, sans-serif;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: initial;
+  padding: 2px 4px 0px 12px;
+  color: #fefefe;
+  color: var(--font-white);
+  background-color: #b32d2d;
+  font-weight: bold;
+  background: linear-gradient(135deg, transparent 8px, #b32d2d 0) top left,
+    linear-gradient(225deg, transparent 0px, #b32d2d 0) top right,
+    linear-gradient(-45deg, transparent 0px, #b32d2d 0) bottom right,
+    linear-gradient(46deg, transparent 8px, #b32d2d 0) bottom left;
+  background-size: 51% 50%;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+}
+.PriceTag_inline a {
+  text-decoration: underline;
+}
+.PriceTagW {
+  font-family: times new roman, sans-serif;
+  float: right;
+  font-size: 14px;
+  padding: 1px 4px 0px 2px;
+  color: #fefefe;
+  color: var(--font-white);
+  background-color: #b32d2d;
+  font-weight: bold;
+  position: relative;
+  height: 17px;
+  margin-left: 14px;
+}
+.PriceTagW a {
+  text-decoration: underline;
+}
+.PriceTagW:before {
+  content: "";
+  background: url("/kill-team3/img/Price_arrow.png") no-repeat;
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  left: -8px;
+  top: -0px;
+}
+.legendE {
+  display: flex;
+  align-items: center;
+}
+.legendW {
+  display: block;
+  width: 315px;
+  cursor: pointer;
+  float: left;
+  padding: 2px 5px 2px 0px;
+}
+.Index1 {
+  color: #465f65 !important;
+}
+.ya-site-form input {
+  height: 28px;
+  width: 64px;
+  font-size: 18px;
+}
+.ya-site-form__input-text {
+  font-family: Georgia1, Georgia, serif !important;
+}
+.ya-site-form__submit {
+  font-family: "Minion-Cyrillic-Bold", Georgia1, serif !important;
+  font-size: 18px !important;
+  filter: invert(0);
+  filter: invert(var(--ya-inv-butt));
+}
+.altModels {
+  width: 28px;
+  height: 25px;
+  margin-left: 5px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  background-image: url(/kill-team3/img/altModels3.png);
+}
+@media only screen and (max-width: 800px) {
+  .altModels {
+    margin-left: 4px;
+    width: 21px;
+    height: 19px;
+    background-image: url(/kill-team3/img/altModels2.png);
+  }
+}
+@media only screen and (max-width: 532px) {
+  .altModels {
+    margin-left: 3px;
+    width: 19px;
+    height: 17px;
+    background-image: url(/kill-team3/img/altModels1.png);
+  }
+}
+.altModelsImg {
+  width: 180px;
+  height: 180px;
+}
+.altModelsName {
+  width: 180px;
+  text-overflow: ellipsis;
+  opacity: 0.75;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.altModelsWrap {
+  padding: 5px;
+  width: 180px;
+  border: 1px solid transparent;
+}
+.altModelsWrap:hover {
+  background-color: #cccccc;
+  background-color: var(--bkg1);
+  border: 1px solid #101010;
+  border: 1px solid var(--font-color);
+}
+.altModelsA a {
+  color: #101010;
+  color: var(--content-color);
+}
+.altModelsA a:link {
+  color: #101010;
+  color: var(--content-color);
+}
+.altModelsA a:visited {
+  color: #101010;
+  color: var(--content-color);
+}
+.altModelsA a:hover {
+  color: #101010;
+  color: var(--content-color);
+}
+.td_w {
+  width: 1000px;
+}
+.tooltip_templates {
+  display: none;
+}
