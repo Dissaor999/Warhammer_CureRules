@@ -1,50 +1,272 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal interactivo de reglas y facciones de Warhammer 40,000 y Kill Team">
 
-  <!-- Bootstrap CSS -->
+  <title>Warhammer Hub - Reglas y Facciones</title>
+
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <title>Warhammer Core Rules</title>
+  <!-- Custom Warhammer Grimdark Design System -->
+  <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Las Reglas de Warhammer</h1>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2>Las Reglas de KillTeam</h2>
-        <a href="kill-team3/the-rules/core-rules/index.html">
-          <img src="resources/img/killteam.jpg" class="img-thumbnail" alt="Killteam">
-        </a>
-      </div>
-      <div class="col">
-        <h2>Las Reglas de Warhammer40k</h2>
-        <a href="wh40k11ed/the-rules/core-rules/index.html">
-          <img src="resources/img/40k.png" class="img-thumbnail" alt="40k">
-        </a>
-      </div>
-      <div class="col">
-        <h2>Las Reglas de Warhammer40k Chaos Demons</h2>
-        <a href="wh40k11ed/factions/chaos-daemons/index.html">
-          <img src="resources/img/chaos-daemons.jpg" class="img-thumbnail" alt="40k">
-        </a>
-      </div>
+  <!-- Hero Header -->
+  <header class="hub-header">
+    <div class="container">
+      <h1 class="hub-title">Las Reglas de Warhammer</h1>
+      <p class="hub-subtitle">
+        Biblioteca digital y referencia táctica para los reglamentos centrales y facciones de batalla en el 41º milenio.
+      </p>
+      <div class="hub-divider"></div>
     </div>
-  </div>
+  </header>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+  <main class="container my-4">
+    <!-- SECCIÓN 1: REGLAS PRINCIPALES -->
+    <section class="mb-5">
+      <div class="section-title-wrap">
+        <div class="section-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h2 class="section-title">Reglamentos Centrales</h2>
+        <span class="section-badge">Sistemas de Juego</span>
+      </div>
+
+      <div class="row g-4">
+        <!-- Kill Team 3ª Edición -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="kill-team3/the-rules/core-rules/index.html" class="warhammer-card card-theme-killteam"
+            id="card-killteam">
+            <div class="card-img-container">
+              <span class="card-tag">Kill Team 3ed</span>
+              <img src="resources/img/killteam.jpg" alt="Kill Team - Core Rules" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Operaciones Especiales</span>
+              <h3 class="card-title">Kill Team</h3>
+              <p class="card-desc">
+                Reglas esenciales de combate táctico cuerpo a cuerpo, operaciones clandestinas y tiroteos de élite en
+                zonas hostiles.
+              </p>
+              <div class="card-action-btn">
+                <span>Explorar Reglas</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Warhammer 40k 11ª Edición -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="wh40k11ed/the-rules/core-rules/index.html" class="warhammer-card card-theme-40k"
+            id="card-wh40k-11ed">
+            <div class="card-img-container">
+              <span class="card-tag">40K 11ª Ed</span>
+              <img src="resources/img/40k.png" alt="Warhammer 40,000 11ª Edición" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Reglamento Central</span>
+              <h3 class="card-title">Warhammer 40k 11ª Ed</h3>
+              <p class="card-desc">
+                Reglamento actualizado para batallas campales, fases de turno, destacamentos, estratagemas maestras y
+                hojas de unidad.
+              </p>
+              <div class="card-action-btn">
+                <span>Explorar Reglas</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Warhammer 40k 10ª Edición -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="wh40k10ed/the-rules/core-rules/index.html" class="warhammer-card card-theme-40k-10th"
+            id="card-wh40k-10ed">
+            <div class="card-img-container">
+              <span class="card-tag">40K 10ª Ed</span>
+              <img src="resources/img/40k.png" alt="Warhammer 40,000 10ª Edición" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Archivo Histórico</span>
+              <h3 class="card-title">Warhammer 40k 10ª Ed</h3>
+              <p class="card-desc">
+                Compendio completo de reglas de la décima edición con perfiles estándar, maniobras tácticas y hojas de
+                referencia.
+              </p>
+              <div class="card-action-btn">
+                <span>Explorar Reglas</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: FACCIONES DEL CAOS -->
+    <section class="mb-5">
+      <div class="section-title-wrap">
+        <div class="section-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343a7.975 7.975 0 010 11.314z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h2 class="section-title">Facciones del Caos</h2>
+        <span class="section-badge">11ª Edición</span>
+      </div>
+
+      <div class="row g-4">
+        <!-- Chaos Daemons -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="wh40k11ed/factions/chaos-daemons/index.html" class="warhammer-card card-theme-daemons"
+            id="card-chaos-daemons">
+            <div class="card-img-container">
+              <span class="card-tag">Facción</span>
+              <img src="resources/img/chaos-daemons.jpg" alt="Chaos Daemons" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Legiones Daemonica</span>
+              <h3 class="card-title">Chaos Daemons</h3>
+              <p class="card-desc">
+                Entidades primordiales del Disforme al servicio de los cuatro Dioses: Khorne, Nurgle, Tzeentch y
+                Slaanesh.
+              </p>
+              <div class="card-action-btn">
+                <span>Ver Facción</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Chaos Space Marines -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="wh40k11ed/factions/chaos-space-marines/index.html" class="warhammer-card card-theme-csm"
+            id="card-chaos-space-marines">
+            <div class="card-img-container">
+              <span class="card-tag">Facción</span>
+              <img src="resources/img/chaos-space-marines.jpg" alt="Chaos Space Marines" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Heretic Astartes</span>
+              <h3 class="card-title">Chaos Space Marines</h3>
+              <p class="card-desc">
+                Veteranos de la Larga Guerra, pactos oscuros, tecnología impía y furia implacable contra el Falso
+                Emperador.
+              </p>
+              <div class="card-action-btn">
+                <span>Ver Facción</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Death Guard -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="wh40k11ed/factions/death-guard/index.html" class="warhammer-card card-theme-deathguard"
+            id="card-death-guard">
+            <div class="card-img-container">
+              <span class="card-tag">Facción</span>
+              <img src="resources/img/death-guard.jpg" alt="Death Guard" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Hijos de Mortarion</span>
+              <h3 class="card-title">Death Guard</h3>
+              <p class="card-desc">
+                Resistencia inmortal otorgada por Nurgle, auras de contagio infecciosas y armas biológicas de
+                podredumbre.
+              </p>
+              <div class="card-action-btn">
+                <span>Ver Facción</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Thousand Sons -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="wh40k11ed/factions/thousand-sons/index.html" class="warhammer-card card-theme-thousandsons"
+            id="card-thousand-sons">
+            <div class="card-img-container">
+              <span class="card-tag">Facción</span>
+              <img src="resources/img/thousand-sons.jpg" alt="Thousand Sons" loading="lazy">
+              <div class="card-img-overlay"></div>
+            </div>
+            <div class="card-body-content">
+              <span class="card-category">Legión de Magnus</span>
+              <h3 class="card-title">Thousand Sons</h3>
+              <p class="card-desc">
+                Maestros supremos de la hechicería de Tzeentch, cábalas arcanas y legiones implacables de Marines
+                Rúbrica.
+              </p>
+              <div class="card-action-btn">
+                <span>Ver Facción</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="hub-footer">
+    <div class="container">
+      <p class="mb-1">Warhammer Rules Hub &bull; Referencia y Biblioteca Local</p>
+      <small class="text-muted">Warhammer 40,000, Kill Team y todos los logos y nombres asociados son marcas registradas
+        de Games Workshop Ltd.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 
