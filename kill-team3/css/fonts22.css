@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Trade-Gothic-LT-Cond";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Cond.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Italic-Cond.otf);
+  font-weight: 100;
+  font-style: italic;
+  font-stretch: condensed;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Light.otf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Italic-Light.otf);
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Italic.otf);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Trade-Gothic";
+  src: url(/kill-team3/fonts/Trade-Gothic-LT-Italic-Bold.otf);
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Orator";
+  src: url(/kill-team3/fonts/Orator.otf);
+}
+@font-face {
+  font-family: "DIN-1451";
+  src: url(/kill-team3/fonts/DIN-1451-LT-Pro-Engschrift.otf);
+}
+@font-face {
+  font-family: "DIN-2014";
+  src: url(/kill-team3/fonts/DIN2014-Bold.ttf);
+}
+@font-face {
+  font-family: "Minion-Cyrillic-Bold";
+  src: url(/kill-team3/fonts/Minion-Cyrillic-Bold.ttf);
+}

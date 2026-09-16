@@ -1,0 +1,211 @@
+@media print {
+  :root {
+    --font-color: #000;
+    --font-grey: #888;
+    --font-white: #fff;
+    --bg-color: #f0f0f0;
+    --bg-body: #d3d3d3;
+    --bg-body-border: #545454;
+    --img-inv: 0;
+    --img-inv-1: 1;
+    --img-opa: 1;
+    --nav-frame-border: #777;
+    --nav-bg: #eeeeee;
+    --nav-tab-bg: #888;
+    --nav-tab-bg-hover: #101010;
+    --faction-header: #990000;
+    --author-color: #494949;
+    --boosty-logo: 100%;
+    --noads-logo: 100%;
+    --redfont: #c54c21;
+    --a-color: #255eff;
+    --a-visited: #7d25ce;
+    --faq-bg: #cccccc;
+    --grey-bg: #cccccc;
+    --nav-hover: #b4c4c7;
+    --row-bg: #e0e0e0;
+    --dsCollated: #808080;
+    --tooltip-border-color: #000;
+    --tooltip-font-color: #000;
+    --tooltip-bg-color: #fff;
+    --tooltip-header: #4b626d;
+    --tooltip-header-underline: #313131;
+    --first-letter: #cc0000;
+    --ya-logo-inv: 0;
+    --ya-logo-hue: 0deg;
+    --ya-bri: 1;
+    --ya-con: 1;
+    --ya-inv: 0;
+    --ya-inv-butt: 0;
+    --ya-grey: 0;
+    --ya-bri-input: 1;
+    --ya-con-input: 1;
+    --bkg0: unset;
+    --bkg1: #cccccc;
+    --cog-inv: 0;
+    --ctrlSelect: #fff;
+    --checkmark: #fff;
+    --checkborder: #555;
+    --header-bg: #b2b2b2;
+    --wd-border: #252725;
+    --ds-header-color: #fefefe;
+    --strat-pts-color: #fefefe;
+    --site-header: url("/kill-team3/img/Wahapedia3-site-header.png");
+    --site-header-short: url("/kill-team3/img/Wahapedia3-site-header-short.png");
+    --button-to-top: url(/kill-team3/img/Button_ToTop.png);
+    --button-to-top-hover: url(/kill-team3/img/Button_ToTop_Hover.png);
+    --button-army-list: url(/kill-team3/img/Button_ArmyList.png);
+    --button-army-list-hover: url(/kill-team3/img/Button_ArmyList_Hover.png);
+    --button-contents: url(/kill-team3/img/Button_Contents.png);
+    --button-contents-hover: url(/kill-team3/img/Button_Contents_Hover.png);
+  }
+  [data-theme="dark"] {
+    --font-color: #000;
+    --font-grey: #888;
+    --font-white: #fff;
+    --bg-color: #f0f0f0;
+    --bg-body: #d3d3d3;
+    --bg-body-border: #545454;
+    --img-inv: 0;
+    --img-inv-1: 1;
+    --img-opa: 1;
+    --nav-frame-border: #777;
+    --nav-bg: #eeeeee;
+    --nav-tab-bg: #888;
+    --nav-tab-bg-hover: #101010;
+    --faction-header: #990000;
+    --author-color: #494949;
+    --boosty-logo: 100%;
+    --noads-logo: 100%;
+    --redfont: #c54c21;
+    --a-color: #255eff;
+    --a-visited: #7d25ce;
+    --faq-bg: #cccccc;
+    --grey-bg: #cccccc;
+    --nav-hover: #b4c4c7;
+    --row-bg: #e0e0e0;
+    --dsCollated: #808080;
+    --tooltip-border-color: #000;
+    --tooltip-font-color: #000;
+    --tooltip-bg-color: #fff;
+    --tooltip-header: #4b626d;
+    --tooltip-header-underline: #313131;
+    --first-letter: #cc0000;
+    --ya-logo-inv: 0;
+    --ya-logo-hue: 0deg;
+    --ya-bri: 1;
+    --ya-con: 1;
+    --ya-inv: 0;
+    --ya-inv-butt: 0;
+    --ya-grey: 0;
+    --ya-bri-input: 1;
+    --ya-con-input: 1;
+    --bkg0: unset;
+    --bkg1: #cccccc;
+    --cog-inv: 0;
+    --ctrlSelect: #fff;
+    --checkmark: #fff;
+    --checkborder: #555;
+    --header-bg: #b2b2b2;
+    --wd-border: #252725;
+    --ds-header-color: #fefefe;
+    --strat-pts-color: #fefefe;
+    --site-header: url("/kill-team3/img/Wahapedia3-site-header.png");
+    --site-header-short: url("/kill-team3/img/Wahapedia3-site-header-short.png");
+    --button-to-top: url(/kill-team3/img/Button_ToTop.png);
+    --button-to-top-hover: url(/kill-team3/img/Button_ToTop_Hover.png);
+    --button-army-list: url(/kill-team3/img/Button_ArmyList.png);
+    --button-army-list-hover: url(/kill-team3/img/Button_ArmyList_Hover.png);
+    --button-contents: url(/kill-team3/img/Button_Contents.png);
+    --button-contents-hover: url(/kill-team3/img/Button_Contents_Hover.png);
+  }
+  :root {
+    --content-color: #101010;
+    --content-color-inv: #fefefe;
+    --idx-color: #465f65;
+    --oplay-color: #96552f;
+    --bl0: #101010;
+    --bl1: #e3f1f2;
+    --dsAbility-bg: #dee2e1;
+  }
+  [data-theme="dark"] {
+    --content-color: #101010;
+    --content-color-inv: #fefefe;
+    --idx-color: #465f65;
+    --oplay-color: #96552f;
+    --bl0: #101010;
+    --bl1: #e3f1f2;
+    --dsAbility-bg: #dee2e1;
+  }
+  :root {
+    --corner10-bg: #e7e5e0;
+    --tpFrame-bg: #e7e5e0;
+    --tooltip_link_inline: 100%;
+    --corner18-bg: #36433c;
+    --corner24-bg: #f15c23;
+    --corner24-bg-in: #f0f0f0;
+    --tactics-border-bg: #e7e5e0;
+    --tactics-corner-bottom: url(/kill-team3/img/Tactics-corner-bottom.png);
+    --font-relic: #686868;
+  }
+  [data-theme="dark"] {
+    --corner10-bg: #e7e5e0;
+    --tpFrame-bg: #e7e5e0;
+    --tooltip_link_inline: 100%;
+    --corner18-bg: #36433c;
+    --corner24-bg: #f15c23;
+    --corner24-bg-in: #f0f0f0;
+    --tactics-border-bg: #e7e5e0;
+    --tactics-corner-bottom: url(/kill-team3/img/Tactics-corner-bottom.png);
+    --font-relic: #686868;
+  }
+  :root {
+    --pic-inv: 0;
+    --ds-wargear-bg: #b4bbb4;
+    --ds-line-bg: #eedaca;
+    --cg-card: #e5e0d1;
+    --ds-background: url(/kill-team3/img/dsBackground.png);
+    --ds-shadow: 1px 1px 4px #000;
+  }
+  [data-theme="dark"] {
+    --pic-inv: 0;
+    --ds-wargear-bg: #b4bbb4;
+    --ds-line-bg: #eedaca;
+    --cg-card: #e5e0d1;
+    --ds-background: url(/kill-team3/img/dsBackground.png);
+    --ds-shadow: 1px 1px 4px #000;
+  }
+  .noprint {
+    display: none;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  #wrapper {
+    border: 0;
+  }
+  .pagebreak {
+    page-break-inside: avoid;
+  }
+  #btnContents {
+    display: none;
+  }
+  #btnContents:hover,
+  #btnContents.hover {
+    display: none;
+  }
+  #btnArmyList {
+    display: none;
+  }
+  #btnArmyList:hover,
+  #btnArmyList.hover {
+    display: none;
+  }
+  #btnBackToTop {
+    display: none;
+  }
+  #btnBackToTop:hover,
+  #btnBackToTop.hover {
+    display: none;
+  }
+}

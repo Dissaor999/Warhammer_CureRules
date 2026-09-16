@@ -1,0 +1,340 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Outfit:wght@400;500;600;700&display=swap');
+
+  /* Override legacy #siteNav styles */
+  #siteNav {
+    min-height: auto !important;
+    background: linear-gradient(180deg, rgba(14, 18, 24, 0.98) 0%, rgba(10, 12, 16, 0.95) 100%) !important;
+    border-bottom: 2px solid #d4af37 !important;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.15) !important;
+    position: relative !important;
+    z-index: 10000 !important;
+    font-family: 'Outfit', sans-serif !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .wh-navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.25rem;
+    position: relative;
+  }
+
+  /* Brand / Logo */
+  .wh-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-decoration: none !important;
+    color: #f0f2f5 !important;
+    transition: all 0.25s ease;
+  }
+
+  .wh-nav-brand:hover {
+    filter: brightness(1.2);
+  }
+
+  .wh-brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+    object-fit: cover;
+  }
+
+  .wh-brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wh-brand-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.15rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    background: linear-gradient(135deg, #ffffff 20%, #d4af37 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+
+  .wh-brand-sub {
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9ba3b2;
+    font-weight: 500;
+  }
+
+  /* Nav Links & Dropdowns */
+  .wh-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wh-nav-item {
+    position: relative;
+  }
+
+  .wh-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #e2e8f0 !important;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .wh-nav-btn:hover,
+  .wh-nav-item:hover .wh-nav-btn {
+    background: rgba(212, 175, 55, 0.15);
+    border-color: #d4af37;
+    color: #f3e5ab !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+    transform: translateY(-1px);
+  }
+
+  .wh-nav-btn svg.wh-chevron {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.25s ease;
+  }
+
+  .wh-nav-item:hover .wh-nav-btn svg.wh-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Dropdown Menu Container */
+  .wh-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 250px;
+    background: rgba(14, 18, 24, 0.98);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+    padding: 0.5rem;
+    z-index: 10001;
+  }
+
+  .wh-nav-item:hover .wh-dropdown-menu,
+  .wh-dropdown-menu.show-mobile {
+    display: block;
+    animation: whFadeSlide 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes whFadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .wh-dropdown-header {
+    font-family: 'Cinzel', serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #d4af37;
+    padding: 0.4rem 0.75rem 0.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 0.35rem;
+  }
+
+  .wh-dropdown-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.55rem 0.75rem;
+    color: #cbd5e1 !important;
+    text-decoration: none !important;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .wh-dropdown-link:hover {
+    background: rgba(212, 175, 55, 0.12);
+    color: #ffffff !important;
+    padding-left: 0.95rem;
+  }
+
+  /* Status Dots for Factions */
+  .wh-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px currentColor;
+  }
+  .wh-dot-daemons { color: #ff3344; background-color: #ff3344; }
+  .wh-dot-csm { color: #e67e22; background-color: #e67e22; }
+  .wh-dot-dg { color: #2ecc71; background-color: #2ecc71; }
+  .wh-dot-ts { color: #00d2ff; background-color: #00d2ff; }
+  .wh-dot-gold { color: #d4af37; background-color: #d4af37; }
+
+  /* Mobile Hamburger Button */
+  .wh-mobile-toggle {
+    display: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #d4af37;
+    border-radius: 6px;
+    padding: 0.45rem 0.65rem;
+    cursor: pointer;
+  }
+  .wh-mobile-toggle svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Responsive Rules */
+  @media (max-width: 850px) {
+    .wh-mobile-toggle {
+      display: block;
+    }
+
+    .wh-nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(12, 15, 20, 0.98);
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      border-bottom: 2px solid #d4af37;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0.75rem 1rem 1rem;
+      gap: 0.5rem;
+    }
+
+    .wh-nav-menu.open {
+      display: flex;
+    }
+
+    .wh-dropdown-menu {
+      position: static;
+      box-shadow: none;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 0.35rem;
+    }
+  }
+</style>
+
+<div class="wh-navbar">
+  <!-- Brand Logo & Title -->
+  <a href="/index.html" class="wh-nav-brand" title="Volver al Hub de Reglas">
+    <img src="/resources/img/40k.png" alt="Warhammer" class="wh-brand-logo">
+    <div class="wh-brand-text">
+      <span class="wh-brand-title">Warhammer Hub</span>
+      <span class="wh-brand-sub">Reglamentos & Facciones</span>
+    </div>
+  </a>
+
+  <!-- Mobile Toggle Button -->
+  <button class="wh-mobile-toggle" onclick="document.querySelector('.wh-nav-menu').classList.toggle('open');" aria-label="Abrir Menú">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+    </svg>
+  </button>
+
+  <!-- Navigation Menu -->
+  <ul class="wh-nav-menu">
+    <!-- Hub Principal -->
+    <li class="wh-nav-item">
+      <a href="/index.html" class="wh-nav-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <span>Inicio</span>
+      </a>
+    </li>
+
+    <!-- Reglamentos Dropdown -->
+    <li class="wh-nav-item">
+      <button class="wh-nav-btn" onclick="this.nextElementSibling.classList.toggle('show-mobile');">
+        <span>Reglamentos</span>
+        <svg class="wh-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div class="wh-dropdown-menu">
+        <div class="wh-dropdown-header">Sistemas de Juego</div>
+        <a href="/wh40k11ed/the-rules/core-rules/index.html" class="wh-dropdown-link">
+          <span class="wh-dot wh-dot-gold"></span>
+          <span>Warhammer 40K (11ª Edición)</span>
+        </a>
+        <a href="/wh40k10ed/the-rules/core-rules/index.html" class="wh-dropdown-link">
+          <span class="wh-dot" style="color:#5dade2;background-color:#5dade2;"></span>
+          <span>Warhammer 40K (10ª Edición)</span>
+        </a>
+        <a href="/kill-team3/the-rules/core-rules/index.html" class="wh-dropdown-link">
+          <span class="wh-dot" style="color:#ff9900;background-color:#ff9900;"></span>
+          <span>Kill Team (3ª Edición)</span>
+        </a>
+      </div>
+    </li>
+
+    <!-- Facciones del Caos Dropdown -->
+    <li class="wh-nav-item">
+      <button class="wh-nav-btn" onclick="this.nextElementSibling.classList.toggle('show-mobile');">
+        <span>Facciones</span>
+        <svg class="wh-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div class="wh-dropdown-menu" style="min-width: 270px;">
+        <div class="wh-dropdown-header">Facciones del Caos (11ª Ed)</div>
+        <a href="/wh40k11ed/factions/chaos-daemons/index.html" class="wh-dropdown-link">
+          <span class="wh-dot wh-dot-daemons"></span>
+          <span>Chaos Daemons</span>
+        </a>
+        <a href="/wh40k11ed/factions/chaos-space-marines/index.html" class="wh-dropdown-link">
+          <span class="wh-dot wh-dot-csm"></span>
+          <span>Chaos Space Marines</span>
+        </a>
+        <a href="/wh40k11ed/factions/death-guard/index.html" class="wh-dropdown-link">
+          <span class="wh-dot wh-dot-dg"></span>
+          <span>Death Guard</span>
+        </a>
+        <a href="/wh40k11ed/factions/thousand-sons/index.html" class="wh-dropdown-link">
+          <span class="wh-dot wh-dot-ts"></span>
+          <span>Thousand Sons</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
